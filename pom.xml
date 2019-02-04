@@ -40,6 +40,13 @@
       <artifactId>javax.servlet.jsp.jstl-api</artifactId>
       <version>1.2.2</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.4</version>
+      <scope>provided</scope>
+    </dependency>
 
   </dependencies>
 
