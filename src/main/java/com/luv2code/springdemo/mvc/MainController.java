@@ -3,16 +3,18 @@ package com.luv2code.springdemo.mvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-public class HelloWorldController {
+@RequestMapping("/hello")
+public class MainController {
 
     @RequestMapping("/showform")
     public String showForm() {
 
-        return "helloworld-form";
-
+        return "NameEntryForm";
     }
 
     @RequestMapping("/processForm")
@@ -27,6 +29,20 @@ public class HelloWorldController {
 
         // read the request parameter from the html form
         String theName = request.getParameter("studentName");
+
+        // create a new message
+        String result = "Yo " + theName.toUpperCase();
+
+        // add message to the model
+        model.addAttribute("message", result);
+
+        return "helloworld";
+    }
+
+    // new controller method using @RequestParam in method call
+    @RequestMapping("/processFormVersionThree")
+    public String processThree(@RequestParam("studentName") String theName,
+                               Model model) {
 
         // create a new message
         String result = "Yo " + theName.toUpperCase();

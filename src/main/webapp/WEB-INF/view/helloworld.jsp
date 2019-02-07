@@ -15,10 +15,10 @@
 <h2>Hello World of Spring</h2>
 <br>
 
-The students name is: ${param.studentName}
+You entered the name: ${param.studentName}
 <br><br>
 
-The message received from the model is: ${message}
+The message received from the model after processing was: ${message}
 
 </body>
 </html>

@@ -12,11 +12,11 @@
 </head>
 <body>
 
-<h2>Page called by HelloController MOFO</h2>
+<h2>Page called by HelloController / mapping</h2>
 
 <hr>
 
-<a href="showform">Hello World Form</a>
+<a href="hello/showform">Name Entry Form</a>
 
 </body>
 </html>
