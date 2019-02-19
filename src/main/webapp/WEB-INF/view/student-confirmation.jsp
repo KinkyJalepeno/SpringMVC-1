@@ -1,10 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Wolfh
-  Date: 08/02/2019
-  Time: 14:24
-  To change this template use File | Settings | File Templates.
---%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,10 +8,21 @@
 <body>
 <!-- data contained in the modelAttribute "student" is accessed here-->
 The Students name is: ${student.firstName} ${student.lastName}
-<br>
+<br><br>
+Country of origin: ${student.countryTwo}
+<br><br>
 Country of origin: ${student.country}
-<br>
+<br><br>
 Favourite Language: ${student.favouriteLanguage}
+<br><br>
+Known Operating Systems:
+<ul>
+    <c:forEach var="temp" items="${student.operatingSystems}">
+
+        <li> ${temp} </li>
+    </c:forEach>
+
+</ul>
 
 </body>
 </html>

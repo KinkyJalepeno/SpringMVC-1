@@ -28,11 +28,11 @@
 
     <form:select path="countryTwo">
 
-        <form:option value="unitedKingdom" label="United Kingdom"/>
-        <form:option value="ireland" label="Ireland"/>
-        <form:option value="scotland" label="Scotland"/>
-        <form:option value="wales" label="Wales"/>
-        <form:option value="unitedStates" label="United States"/>
+        <form:option value="UnitedKingdom" label="United Kingdom"/>
+        <form:option value="Ireland" label="Ireland"/>
+        <form:option value="Scotland" label="Scotland"/>
+        <form:option value="Wales" label="Wales"/>
+        <form:option value="UnitedStates" label="United States"/>
 
     </form:select>
 
@@ -46,10 +46,18 @@
 
     <!--add in nice radio buttons to select favourite coding language -->
     Favourite Language:
-    Java<form:radiobutton path="favouriteLanguage" value="Java"/>
-    C#<form:radiobutton path="favouriteLanguage" value="C#"/>
-    Ruby<form:radiobutton path="favouriteLanguage" value="Ruby"/>
-    JavaScript<form:radiobutton path="favouriteLanguage" value="JavaScript"/>
+    Java <form:radiobutton path="favouriteLanguage" value="Java"/>
+    C# <form:radiobutton path="favouriteLanguage" value="C#"/>
+    Ruby <form:radiobutton path="favouriteLanguage" value="Ruby"/>
+    JavaScript <form:radiobutton path="favouriteLanguage" value="JavaScript"/>
+    <br><br>
+
+    <!--add in checkboxes for multiple OS selections-->
+    What OS's are you familiar with:
+    Linux <form:checkbox path="operatingSystems" value="Linux"/>
+    Windows <form:checkbox path="operatingSystems" value="Windows"/>
+    MAC OS <form:checkbox path="operatingSystems" value="MAC OS"/>
+
     <br><br>
     <input type="submit" value="Submit">
 

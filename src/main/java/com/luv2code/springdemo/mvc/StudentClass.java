@@ -11,6 +11,7 @@ public class StudentClass {
     private String favouriteLanguage;
 
     private LinkedHashMap<String, String> countryOptions;
+    private String[] operatingSystems;
 
 
     public StudentClass() {
@@ -67,5 +68,13 @@ public class StudentClass {
 
     public LinkedHashMap<String, String> getCountryOptions() {
         return countryOptions;
+    }
+
+    public String[] getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(String[] operatingSystems) {
+        this.operatingSystems = operatingSystems;
     }
 }
